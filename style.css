@@ -10,8 +10,11 @@
 * {
     margin: 0px;
     padding: 0px;
-    background-color: #111827;
+    
     color: #F6F2E9;
+}
+body{
+    background-color: #111827;
 }
 html{
     scroll-behavior: smooth;
@@ -46,6 +49,12 @@ html{
 
 /* #1F2937 */
 /* header styles are here */
+header{
+    background-image: url('./images/banner-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom left;
+}
 .navbar {
     display: flex;
     align-items: center;
@@ -85,10 +94,7 @@ html{
     justify-content: space-between;
     align-items: center;
     margin: 50px 0px;
-    background-image: url('./images/banner-bg.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom left;
+    
 }
 .banner-image{
     width: 100%;
@@ -112,7 +118,47 @@ html{
     margin-right: 12px;
 }
 /* about section */
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
 
+.section-description {
+    color:#EEEEEE ;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.about-me {
+    background-color: #232D42;
+    padding: 50px 0px;
+    
+}
+.about-info{
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+.about-item {
+    color: rgba(117, 117, 117, 1);
+    font-size: 1.25rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 40px;
+
+}
+.item-info {
+    
+
+}
+.item-description {
+    color: #8bb1ff;
+    font-weight: 600;
+}
 /* Responsive media query */
 @media screen  and (max-width:576px){
     .container{
@@ -120,6 +166,9 @@ html{
     }
     .banner{
         flex-direction: column-reverse;
+    }
+    .about-item{
+        flex-direction: column;
     }
     .nav-links{
         display: none;
