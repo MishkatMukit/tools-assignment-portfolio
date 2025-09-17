@@ -11,9 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/481fde1f12.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="font-inter">
@@ -25,7 +23,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="">Skills</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
                 <i id="threebar" class="fa-solid fa-bars"></i>
@@ -37,8 +35,8 @@
                     <p class="banner-description">A design driven developer, merging design sense with solid code to
                         build
                         products people love.</p>
-                    <a href=""><button class="primary-button">Download CV</button></a>
-                    <a href=""><button class="secondary-button">Contact Me</button></a>
+                    <a href=""><button class="primary-button"><i class="fa-solid fa-circle-down"></i> Download CV</button></a>
+                    <a href=""><button class="secondary-button"><i class="fa-solid fa-phone"></i> Contact Me</button></a>
 
                 </div>
                 <div class="banner-image-container">
@@ -115,40 +113,131 @@
             </h3>
             <div class="pro-card-container">
                 <div class="pro-card">
-                    <img src="./images/pro1.jpeg" alt="">
+                    <img src="./images/rsz_pro1.jpg" alt="">
                     <div class="pro-card-content">
                         <h3 class="pro-card-title">Minimal Task Manager</h3>
                         <p class="pro-card-description">
                             A minimal task manager focuses on the essentials for capturing, viewing, and completing tasks while staying fast and distraction‑free
                         </p>
-                        <a target="_blank" href="https://mishkatmukit.github.io/taskwiiz/"><button class="secondary-button">View Project</button></a>
+                        <a class="view-project" target="_blank" href="https://mishkatmukit.github.io/taskwiiz/"><button class="secondary-button">View Project</button></a>
                     </div>
                 </div>
                 <div class="pro-card">
-                    <img src="./images/pro3.jpeg" alt="">
+                    <img src="./images/rsz_pro3.jpg" alt="">
                     <div class="pro-card-content">
                         <h3 class="pro-card-title">Fitness club Website</h3>
                         <p class="pro-card-description">
                            A versatile fitness club that focuses on achieving a good health through continous observation of clients. 
                         </p>
-                        <a class="button2" target="_blank" href="https://mishkatmukit.github.io/Rinterio-Design/"><button class="secondary-button">View Project</button></a>
+                        <a class="view-project" target="_blank" href="https://mishkatmukit.github.io/Rinterio-Design/"><button class="secondary-button">View Project</button></a>
                     </div>
                 </div>
                 <div class="pro-card">
-                    <img src="./images/pro2.jpeg" alt="">
+                    <img src="./images/rsz_pro2.jpg" alt="">
                     <div class="pro-card-content">
                         <h3 class="pro-card-title">Interior Designer</h3>
                         <p class="pro-card-description">
-                            A minimal task manager focuses on the essentials for capturing, viewing, and completing tasks while staying fast and distraction‑free
+                            Creates functional, safe, and aesthetically pleasing indoor spaces by strategically planning layouts, selecting materials, colors, lighting, and furniture to meet client needs and preferences.
                         </p>
-                        <a target="_blank" href="https://mishkatmukit.github.io/versatile-fitness-club/"><button class="secondary-button">View Project</button></a>
+                        <a class="view-project" target="_blank" href="https://mishkatmukit.github.io/versatile-fitness-club/"><button class="secondary-button">View Project</button></a>
                     </div>
                 </div>
             </div>
             <div class="all-projects">
-                <a target="_blank" href="https://github.com/MishkatMukit"><button class="secondary-button">View All Projects</button></a>
+                <a target="_blank" href="https://github.com/MishkatMukit"><button class="secondary-button ">
+                    <i class="fa-solid fa-arrow-up-right-from-square white2 "></i> View All Projects</button></a>
             </div>
         </section>
+        <!-- skills section -->
+         <section id="skills" class="skill-section bg">
+            <div class="container">
+                <h1 class="section-title gradient">My Skills</h1>
+                <div class="skills-wrapper">
+                    <div class="tech-skill">
+                    <h2 class="tech-skill-title gradient">
+                        Technical skills
+                    </h2>
+                    <div class="skill-container">
+                        <div class="skill">
+                            <img src="images/icons/html.png" alt="">
+                            <div class="skill-info">
+                                <h3 class="skill-title">HTML</h3>
+                                <p class="white2">Strong understanding in HTML5</p>
+                                <div class= "stat">
+                                    <div class="statbar-html"></div>
+                                    <p class="white2">90<span class="percent">%</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <img src="images/icons/css.png" alt="">
+                            <div class="skill-info">
+                                <h3 class="skill-title">CSS3</h3>
+                                <p class="white2">Strong understanding in CSS3</p>
+                                <div class= "stat">
+                                    <div class="statbar-css"></div>
+                                    <p class="white2">85<span class="percent">%</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <img src="images/icons/js.png" alt="">
+                            <div class="skill-info">
+                                <h3 class="skill-title">JavaScript</h3>
+                                <p class="white2">intermediate understanding in Javascript</p>
+                                <div class= "stat">
+                                    <div class="statbar-js"></div>
+                                    <p class="white2">58<span class="percent">%</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <img src="images/icons/Ai.png" alt="">
+                            <div class="skill-info">
+                                <h3 class="skill-title">Adobe Illustrator</h3>
+                                <p class="white2">Virtuoso level knowledge in Adobe Illustrator</p>
+                                <div class= "stat">
+                                    <div class="statbar-ai"></div>
+                                    <p class="white2">79<span class="percent">%</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="soft-skill">
+                    <h2 class="tech-skill-title gradient">
+                        Soft skills
+                    </h2>
+                    <div class="skill-container">
+                        <div class="skill">
+                            <div>
+                                <h3 class="skill-title"><i class="fa-solid fa-user-tie  gradient"></i> Leadership </h3>
+                            <p class="white2">
+                                Demonstrated ability to guide and collaborate with diverse teams through complex technical projects and academic initiatives. Experienced in facilitating group problem-solving sessions, delegating tasks based on team members' strengths, and maintaining clear communication channels to ensure project success. 
+                            </p>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div>
+                                <h3 class="skill-title"><i class="fa-brands fa-teamspeak gradient"></i> Team Player </h3>
+                            <p class="white2">
+                                Excellent at supporting team objectives while contributing specialized skills.Skilled at active listening, providing constructive feedback, and maintaining positive relationships even under project pressure. 
+                            </p>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div>
+                                <h3 class="skill-title"><i class="fa-solid fa-clock gradient"></i> Time Management </h3>
+                            <p class="white2">
+                                Highly organized student with proven ability to balance multiple academic projects, coursework, and personal development activities effectively.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+         </section>
     </main>
     <footer>
 
