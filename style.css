@@ -80,21 +80,25 @@ header{
     color: #F6F2E9;
 }
 .nav-links {
+    padding: 8px 2px;
+    border: 1px solid #334160;
+    border-radius: 40px;
     display: flex;
     gap: 24px;
     list-style: none;
 }
-
+.nav-links:hover{
+    
+}
 .nav-links a {
     text-decoration: none;
     padding: 6px 8px;
-    border-radius: 3px;
+    border-radius: 40px;
     background: transparent;
    
 }
 .nav-links a:hover{
-    background: linear-gradient(to right, #6745FC, #3878FC); 
-        transition: background .5s ease;
+    background: linear-gradient(to right, #6745FC, #3878FC);
 }
 .brand {
     font-weight: 700;
