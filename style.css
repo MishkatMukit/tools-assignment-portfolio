@@ -81,9 +81,15 @@ header{
 
 .nav-links a {
     text-decoration: none;
-
+    padding: 6px 8px;
+    border-radius: 3px;
+    background: transparent;
+   
 }
-
+.nav-links a:hover{
+    background: linear-gradient(to right, #6745FC, #3878FC); 
+        transition: background .5s ease;
+}
 .brand {
     font-weight: 700;
     font-size: 2rem;
@@ -332,7 +338,72 @@ header{
 .percent{
     font-size: 0.7rem;
 }
+/* contact me  */
+.contact{
+    padding: 50px 0px;
+}
+.contact-container{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+}
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px ;
+}
 
+.social img{
+    max-width: 80%;
+    filter:opacity(.9);
+}
+.social-description{
+    max-width: 640px;
+    margin: 16px 0px 8px;
+}
+
+.social-icons a{
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    background-color: #2A354F;
+    height: 64px;
+    width: auto;
+    border-radius: 5px;
+    padding: 8px 22px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 24px;
+}
+.contact-form input::placeholder{
+    color: #eeeeeed8;
+}
+.contact-form textarea::placeholder{
+    color: #eeeeeed8;
+}
+.contact-form input,
+.contact-form textarea {
+    border: 2px solid #3879fc8b
+}
+
+.contact-form textarea {
+    width: auto;
+    background-color: #2A354F;
+    color:  white;
+    font-size: 16px;
+    text-align: left;
+    padding: 8px 22px;
+    border-radius: 5px;
+    margin-bottom: 24px;
+}
+.footer{
+    background-color: #0d121c;
+    padding: 20px 0px;
+    text-align: center;
+}
 /* Responsive media query */
 @media screen  and (max-width:576px){
     header{
@@ -347,7 +418,8 @@ header{
     .about-item,
     .edu-card-container,
     .pro-card-container,
-    .skills-wrapper{
+    .skills-wrapper,
+    .contact-container{
         flex-direction: column;
     }
     .nav-links{
@@ -355,5 +427,8 @@ header{
     }
     #threebar{
         display: block;
+    }
+    .social img{
+        max-width: 100%;
     }
 }
